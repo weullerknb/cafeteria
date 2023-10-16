@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=REM:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+}
+
+body {
+    background-color: #d3a27f;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4b280a;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: black;
+    border-bottom: 4px solid #d3a27f;
+    color: #d3a27f;
+}
+
+.sobre-nos {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/img/sobre01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos .contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos h2 {
+    color: rgb(177, 177, 177);
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.sobre-nos p {
+    text-align: center;
+    width: 700px;
+    color: rgb(177, 177, 177);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Entre em contato */
+
+.entre-contato {
+    background-color: #d3a27f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entre-contato img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentcontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentcontato h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contentcontato p {
+    text-align: center;
+    font-size: 2rem;
+    width: 700px;
+}
