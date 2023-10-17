@@ -1,15 +1,11 @@
 package com.example.cafeteria.models;
 
-import java.util.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "usuario")
@@ -26,9 +22,8 @@ public class Usuario {
 	@Column(name = "cpf", length = 15, nullable = true)
 	private String cpf;
 	
-	@Column(name = "data_nascimento", nullable = true)
-    @Temporal(TemporalType.DATE)
-	private Date dataNascimento;
+	@Column(name = "nascimento", nullable = true)
+	private String nascimento;
 	
 	@Column(name = "telefone", length = 15, nullable = true)
 	private String telefone;
@@ -39,6 +34,18 @@ public class Usuario {
 	@Column(name = "senha", columnDefinition = "TEXT", nullable = true)
 	private String senha;
 
+	public Usuario() {
+	}
+
+	public Usuario(Integer id, String nome, String cpf, String nascimento, String telefone, String email, String senha) {
+		this.id = id;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.nascimento = nascimento;
+		this.telefone = telefone;
+		this.email = email;
+		this.senha = senha;
+	}
 
     public Integer getId() {
 		return id;
@@ -58,11 +65,11 @@ public class Usuario {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public Date getNascimento() {
-		return dataNascimento;
+	public String getNascimento() {
+		return nascimento;
 	}
-	public void setNascimento(Date nascimento) {
-		this.dataNascimento = nascimento;
+	public void setNascimento(String nascimento) {
+		this.nascimento = nascimento;
 	}
 	public String getTelefone() {
 		return telefone;
