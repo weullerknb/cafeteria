@@ -133,7 +133,7 @@ function checkForm() {
     });
 
     if (isValid) {
-        cadastrar();
+        //cadastrar();
         alert("CADASTRADO COM SUCESSO");
         limpar();
     };
@@ -147,7 +147,7 @@ function errorInput(input, mensagem) {
 
     formItem.className = "form-content error";
 }
-
+/*
 function cadastrar() {
 
     fetch("http://localhost:8080/usuarios",
@@ -170,7 +170,7 @@ function cadastrar() {
     .then(function (res) { console.log(res) })
     .catch(function (res) { console.log(res) })
 };
-
+*/
 function limpar() {
     nome.value = "";
     cpf.value = "";

@@ -4,14 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.cafeteria.models.Usuario;
+
 @Controller
-public class IndexController {
+public class CadastroController {
     
-    @GetMapping("/index")
-    public ModelAndView index() {
+    @GetMapping("/cadastro")
+    public ModelAndView cadastro() {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("html/index");
+        mv.setViewName("html/cadastro");
+        mv.addObject("usuario", new Usuario());
         return mv;
     }
-
 }
